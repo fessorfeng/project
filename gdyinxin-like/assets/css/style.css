@@ -1,0 +1,106 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /*overflow-x: hidden;*/
+}
+
+ul,ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 0.8em;
+}
+
+nav .banner {
+    background-image: url(../img/banner.png);
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul {
+    position: absolute;
+    padding: 0;
+    float: left;
+    margin: 0;
+    top:50px;
+}
+
+nav ul li {
+    margin: 0 40px;
+}
+
+nav ul.l-list {
+    left:20%;
+}
+
+nav ul.r-list {
+    right:20%;
+}
+
+nav ul li a:hover {
+    color: #117AAF;
+    font-weight: bold;
+}
+
+main {
+    height:600px;
+}
+
+#content {
+    background: url(../img/main_bg.png) center no-repeat;
+    height:100%;
+    text-align: center;
+}
+
+#content .about,#content .news {
+    width: 500px;
+    margin: 0 auto;
+}
+
+#content .about {
+    position: relative;
+    left:-10%;
+    top:10%;
+    text-align: left;
+
+}
+
+#content .news {
+    position: relative;
+    top:40%;
+    left:30%;
+    text-align: left;
+}
+
+#content div h2,#content div h3 {
+    color: #aaa;
+}
+
+#content div h2 {
+    font-weight: normal;
+    font-size: 3em;
+}
+
+#content .about h2 span {
+    color: #4E90E4;
+}
+
+#content div h3 {
+    margin-top: 15px;
+}
+
+#content div p {
+    font-size: 0.85em;
+    margin:6px 0;
+}
