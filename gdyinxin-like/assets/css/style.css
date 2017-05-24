@@ -1,6 +1,7 @@
 * {
-    margin:0;
+    margin: 0;
     padding: 0;
+    font-family: Microsoft YaHei;
 }
 
 html, body {
@@ -10,13 +11,13 @@ html, body {
     /*overflow-x: hidden;*/
 }
 
-ul,ol {
+ul, ol {
     list-style: none;
 }
 
 a {
     text-decoration: none;
-    color: #000;
+    color: rgba(0, 0, 0, .7);
     font-size: 0.8em;
 }
 
@@ -33,7 +34,7 @@ nav ul {
     padding: 0;
     float: left;
     margin: 0;
-    top:50px;
+    top: 50px;
 }
 
 nav ul li {
@@ -41,11 +42,11 @@ nav ul li {
 }
 
 nav ul.l-list {
-    left:20%;
+    left: 20%;
 }
 
 nav ul.r-list {
-    right:20%;
+    right: 20%;
 }
 
 nav ul li a:hover {
@@ -53,37 +54,33 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
-main {
-    height:600px;
-}
-
 #content {
     background: url(../img/main_bg.png) center no-repeat;
-    height:100%;
+    height: 644px;
     text-align: center;
 }
 
-#content .about,#content .news {
+#content .about, #content .news {
     width: 500px;
     margin: 0 auto;
 }
 
 #content .about {
     position: relative;
-    left:-10%;
-    top:10%;
+    left: -20%;
+    top: 5%;
     text-align: left;
 
 }
 
 #content .news {
     position: relative;
-    top:40%;
-    left:30%;
+    top: 20%;
+    left: 20%;
     text-align: left;
 }
 
-#content div h2,#content div h3 {
+#content div h2, #content div h3 {
     color: #aaa;
 }
 
@@ -102,5 +99,65 @@ main {
 
 #content div p {
     font-size: 0.85em;
-    margin:6px 0;
+    margin: 6px 0;
+}
+
+#content .news p {
+    margin-top: 100px;
+}
+
+#joinus {
+    margin-top: 5px;
+    height: 327px;
+    background: url("../img/joinus-bg-extra.png");
+}
+
+#joinus .contact {
+    height: 100%;
+    background: url("../img/joinus-bg.png") center no-repeat;
+}
+
+#joinus .contact h1,#joinus .contact h2{
+    position: relative;
+    right:50%;
+    top:20%;
+    text-align: right;
+    color: rgba(0,0,0,.7);
+}
+
+#joinus .contact h1 {
+    font-size:3em;
+}
+
+#joinus .contact h2 {
+    margin-top:10px;
+}
+
+#joinus .contact ul {
+    margin-top: 80px;
+}
+
+#joinus .contact ul li {
+    position: relative;
+    left:55%;
+    text-align: left;
+    width:500px;
+    font-size: 0.85em;
+}
+
+#joinus .contact ul li span {
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 2px;
+    height: 72px;
+    background:url(../img/footer-bg.png) center repeat;
+}
+
+footer p {
+    position: relative;
+    top:50%;
+    color: #aaa;
+    font-size: 0.7em;
 }
