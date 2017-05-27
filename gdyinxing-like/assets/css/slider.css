@@ -8,6 +8,10 @@
     overflow: hidden;
 }
 
+.slideBox .clear {
+	clear: both;
+}
+
 .slideBox ul {
     position: relative;
     padding: 0;
@@ -34,7 +38,6 @@
 		width: 1920px;
 	}
 }
-
 
 
 .spanBox {
