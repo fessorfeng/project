@@ -1,6 +1,6 @@
-# gun.js
+# scroll.js
 
-<a href="https://win5do.github.io/gun.js/" target="_blank">Preview LiveDemo</a>
+<a href="https://win5do.github.io/scroll.js/" target="_blank">Preview LiveDemo</a>
 
 a fullpage scroll plugin for Zepto &amp; jQuery
 
@@ -8,30 +8,30 @@ a fullpage scroll plugin for Zepto &amp; jQuery
 
 ## usage
 
-1. 引入zepto或者jquery然后引入gun.js
+1. 引入zepto或者jquery然后引入scroll.js
 
 2. html template
     
     ```html
-    <div class="gun-wrap">
-        <div class="gun-content">
-            <div class="gun-page on"></div>
-            <div class="gun-page"></div>
-            <div class="gun-page"></div>
-            <div class="gun-page"></div>
-            <div class="gun-page"></div>
-            <div class="gun-page"></div>
-            <div class="gun-page"></div>
-            <div class="gun-page"></div>
-            <div class="gun-page"></div>
+    <div class="scroll-wrap">
+        <div class="scroll-content">
+            <div class="scroll-page on"></div>
+            <div class="scroll-page"></div>
+            <div class="scroll-page"></div>
+            <div class="scroll-page"></div>
+            <div class="scroll-page"></div>
+            <div class="scroll-page"></div>
+            <div class="scroll-page"></div>
+            <div class="scroll-page"></div>
+            <div class="scroll-page"></div>
         </div>
     </div>
-    <!--需要多少页面就写多少个div.gun-page-->
+    <!--需要多少页面就写多少个div.scroll-page-->
     ```
           
 3. 自定义式样
     
-    页面大小可自定义，横向滚动需设置容器为flex或float，css请参考gun.css
+    页面大小可自定义，横向滚动需设置容器为flex或float，css请参考scroll.css
 
     ```css
     <!--关键式样-->
@@ -40,19 +40,19 @@ a fullpage scroll plugin for Zepto &amp; jQuery
     }
     ```
 
-4. 执行下面的一行代码就能愉快的gun了
+4. 执行下面的一行代码就能愉快的scroll了
                         
     ```js
-    $('.gun-page').gun();
+    $('.scroll-page').scroll();
     // 可以嵌套多个滚动框架，传入不同的clsssName即可
-    $('.different').gun();
+    $('.different').scroll();
     ```
 
-5. 个性化设置，给gun()传入option参数;
+5. 个性化设置，给scroll()传入option参数;
 
     ```js
     // option参数可为空，传入制定传入来自定义
-    $('.gun-page').gun({time: 800, nav: 'gun-li', landscape: true});
+    $('.scroll-page').scroll({time: 800, nav: 'scroll-li', landscape: true});
     // option可设置值如下:
         {
             time: 500, // [Number] 滚动动画的时间，默认为500，时间单位为ms；
