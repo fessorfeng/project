@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>demo</title>
+  <link rel="stylesheet" href="libs/gun.css">
+</head>
+
+<body>
+  <div class="gun-wrap wrap1">
+    <div class="content1">
+      <div class="gun-page page1">
+        <div class="intro">
+          <h2>jQury全屏滚动插件</h2>
+        </div>
+        <div class="gun-wrap wrap2">
+          <div class="content2 content-l">
+            <div class="gun-page2 page-l page3">1</div>
+            <div class="gun-page2 page-l page4">2</div>
+            <div class="gun-page2 page-l page5">3</div>
+          </div>
+        </div>
+      </div>
+      <div class="gun-page page2"></div>
+      <div class="gun-page page3"></div>
+      <div class="gun-page page4"></div>
+      <div class="gun-page page5"></div>
+    </div>
+    <ul class="gun-nav">
+      <li class="gun-li">1</li>
+      <li class="gun-li">2</li>
+      <li class="gun-li">3</li>
+      <li class="gun-li">4</li>
+      <li class="gun-li">5</li>
+    </ul>
+  </div>
+  <!--<script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>-->
+  <script src="https://cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
+  <script src="libs/gun.js"></script>
+  <script>
+    $('.gun-page').gun({
+      nav: 'gun-li'
+    });
+    $('.gun-page2').gun({
+      landscape: true
+    });
+  </script>
+</body>
+
+</html>
