@@ -3,13 +3,13 @@
         throw new Error('require Zepto or jQuery');
     }
 
-    $.fn.gun = function (option) {
+    $.fn.scroll = function (option) {
         let page = this;
         let $content = this.parent();
         let onScroll = false;
         let onIndex = 1;
 
-        option = $.extend(true, {}, $.fn.gun.default, option, {
+        option = $.extend(true, {}, $.fn.scroll.default, option, {
             class: $(this).selector,
             pages: $(this).length
         });
@@ -180,7 +180,7 @@
 
         return this;
     }
-    $.fn.gun.default = {
+    $.fn.scroll.default = {
         time: 500,
         nav: null,
         landscape: false

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>demo</title>
+  <link rel="stylesheet" href="assets/scroll.css">
+</head>
+
+<body>
+  <div class="scroll-wrap wrap1">
+    <div class="content1">
+      <div class="scroll-page page1">
+        <div class="intro">
+          <h2>jQury全屏滚动插件</h2>
+          <p>演示demo</p>
+        </div>
+        <div class="scroll-wrap wrap2">
+          <div class="content2 content-l">
+            <div class="scroll-page2 page-l page3">1</div>
+            <div class="scroll-page2 page-l page4">2</div>
+            <div class="scroll-page2 page-l page5">3</div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-page page2"></div>
+      <div class="scroll-page page3"></div>
+      <div class="scroll-page page4"></div>
+      <div class="scroll-page page5"></div>
+    </div>
+    <ul class="scroll-nav">
+      <li class="scroll-li">1</li>
+      <li class="scroll-li">2</li>
+      <li class="scroll-li">3</li>
+      <li class="scroll-li">4</li>
+      <li class="scroll-li">5</li>
+    </ul>
+  </div>
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/scroll.js"></script>
+  <script>
+    $('.scroll-page').scroll({
+      nav: 'scroll-li'
+    });
+    $('.scroll-page2').scroll({
+      landscape: true
+    });
+  </script>
+</body>
+
+</html>
